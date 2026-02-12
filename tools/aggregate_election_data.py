@@ -173,6 +173,8 @@ def infer_party_from_candidate(candidate_name, year):
         'ruth johnson': 'REP',
         'jocelyn benson': 'DEM',
         'mary lou parks': 'DEM',
+        'melvin butch hollowell': 'DEM',
+        'carmella sabaugh': 'DEM',
         
         # Attorney General
         'jennifer granholm': 'DEM',
@@ -182,6 +184,9 @@ def infer_party_from_candidate(candidate_name, year):
         'mike cox': 'REP',
         'bill schuette': 'REP',
         'mark totten': 'DEM',
+        'gary c. peters': 'DEM',
+        'gary peters': 'DEM',
+        'amos williams': 'DEM',
     }
     
     return party_lookup.get(name, 'Other')
