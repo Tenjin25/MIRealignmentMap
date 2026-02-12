@@ -147,8 +147,9 @@ def infer_party_from_candidate(candidate_name, year):
         # Michigan Governors
         'john engler': 'REP',
         'geoffrey fieger': 'DEM',
-        'jennifer granholm': 'DEM',
+        'jennifer granholm': 'DEM', 'jennifer m. granholm': 'DEM',
         'dick posthumus': 'REP',
+        'dick devos': 'REP',
         'rick snyder': 'REP',
         'mark schauer': 'DEM',
         'gretchen whitmer': 'DEM',
