@@ -115,13 +115,8 @@ The aggregation script:
 
 ### Running Locally
 1. Clone this repository
-2. **Configure Mapbox token**:
-   - Copy `config.example.js` to `config.js`
-   - Get a free public token from [Mapbox](https://account.mapbox.com/tokens/)
-   - Add your token to `config.js`
-   - **Do NOT commit `config.js`** (it's in .gitignore)
-3. Open `index.html` in a modern web browser (Chrome, Firefox, Safari, Edge)
-4. No build process required - pure HTML/CSS/JavaScript
+2. Open `index.html` in a modern web browser (Chrome, Firefox, Safari, Edge)
+3. No build process required - pure HTML/CSS/JavaScript
 
 ### Updating Data
 To add new election results:

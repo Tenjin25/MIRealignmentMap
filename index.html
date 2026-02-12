@@ -243,8 +243,6 @@
       map.fitBounds(bbox, { padding: 40, maxZoom: 10 });
     }
   </script>
-  <!-- Optional: Load config.js for Mapbox token (see config.example.js) -->
-  <script src='config.js' defer></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
@@ -1502,7 +1500,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <script>
     // --- CONFIG ---
     const CONFIG = {
-      mapboxToken: (typeof MAPBOX_TOKEN !== 'undefined') ? MAPBOX_TOKEN : 'YOUR_MAPBOX_TOKEN_HERE',
+      mapboxToken: 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21sajF2czdnMDlqMjNlcTRrcm5iczdnMSJ9.OopZliDOcTI8TpEEqW8fkQ',
       paths: {
         counties: './data/tl_2020_26_county20.geojson',
         election: './data/mi_elections_aggregated.json'
@@ -1511,12 +1509,6 @@ document.addEventListener('DOMContentLoaded', function() {
       zoom: 6,
       fitBounds: [[-90.5, 41.7], [-82.4, 48.3]]
     };
-
-    // Check if token is set
-    if (CONFIG.mapboxToken === 'YOUR_MAPBOX_TOKEN_HERE') {
-      console.error('ERROR: Mapbox token not configured. See README.md for setup instructions.');
-      document.body.innerHTML = '<div style="padding: 20px; color: #d32f2f;"><h2>Configuration Error</h2><p>Mapbox token is not configured. Please see <a href="README.md">README.md</a> for setup instructions.</p></div>';
-    }
 
     mapboxgl.accessToken = CONFIG.mapboxToken;
 
